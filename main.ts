@@ -1,14 +1,4 @@
-export function counter(initValue: number = 0): [Function, Function] {
-    let counterValue: number = initValue
-    
-    const get = () => counterValue;
-
-    const next = () => {
-        counterValue++
-    }
-
-    return [get, next]
-}
+import { counter } from "./counter"
 
 const [getA, nextA] = counter(1)
 console.log(getA())
